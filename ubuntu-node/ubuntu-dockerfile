@@ -4,17 +4,18 @@ ENV PATH "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
-RUN apt-get update &&\  
-DEBIAN_FRONTEND=noninteractive\  
- apt-get install -y fuse snapd snap-confine squashfuse sudo &&\  
- apt-get clean &&\  
- dpkg-divert --local --rename --add /sbin/udevadm &&\  
- ln -s /bin/true /sbin/udevadm 
+#COPY /var/lib/oai-cn /var/lib/
+
+RUN apt-get update 
+RUN apt-get clean
 RUN apt-get install -y net-tools 
 RUN apt-get install -y iputils-ping 
 RUN apt-get install -y vim 
-RUN systemctl enable snapd 
+RUN apt-get install -y git
 
-VOLUME ["/sys/fs/cgroup"] 
-STOPSIGNAL SIGRTMIN+3 
+#RUN systemctl enable snapd 
+
+
+#VOLUME ["/home/cigarier/mosaic5g/oai-cn/"] 
+#STOPSIGNAL SIGRTMIN+3 
 CMD ["/sbin/init"]

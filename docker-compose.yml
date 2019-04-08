@@ -27,8 +27,12 @@ services:
      ports:
        - "8081:80"
      restart: always
-   ubuntu:
+
+   oai-cn:
       hostname: ubuntu
+      volumes:
+       - /var/lib/oai-cn:/var/lib/oai-cn
+      restart: always
       build:
         context: .
         dockerfile: /ubuntu-node/ubuntu-dockerfile 
@@ -37,3 +41,4 @@ services:
 
 volumes:
     db_data:
+    oai_data:
