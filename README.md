@@ -17,4 +17,14 @@ Content:
 └── ubuntu-node
     └── ubuntu-dockerfile
 ```
+After building the docker-compose model there will be available the following:
+```
+cigarier@cigarier:~/oai-docker-compose$ sudo docker images
+REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
+oaidockercompose_ubuntu   latest              cc665fb384f3        2 hours ago         343MB
+mysql                     5.7                 98455b9624a9        12 days ago         372MB
+ubuntu                    16.04               9361ce633ff1        3 weeks ago         118MB
+phpmyadmin/phpmyadmin     latest              c6ba363e7c9b        2 months ago        166MB
+```
+
 
