@@ -1,0 +1,15 @@
+FROM ubuntu:16.04
+
+ENV PATH "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
+RUN apt-get update -y
+RUN apt-get install -y python-dev
+RUN apt-get install -y python
+RUN apt-get install -y net-tools
+RUN apt-get install -y iputils-ping
+RUN apt-get install -y vim
+
+CMD ["/sbin/init"]
+

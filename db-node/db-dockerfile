@@ -1,0 +1,11 @@
+FROM mysql:5.7
+
+RUN apt-get update -y
+#RUN apt-get install -y python-dev
+#RUN apt-get install -y python
+#RUN apt-get install -y net-tools
+#RUN apt-get install -y iputils-ping
+#RUN apt-get install -y vim
+
+CMD ["/sbin/init"]
+
