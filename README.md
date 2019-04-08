@@ -1,6 +1,6 @@
 Docker-compose.yml to deploy a chain settup of dockers
 
-`Content:
+`Content:`
 ├── db-node
 │   └── db-dockerfile
 ├── docker-compose.yml
@@ -9,7 +9,6 @@ Docker-compose.yml to deploy a chain settup of dockers
 ├── README.md
 └── ubuntu-node
     └── ubuntu-dockerfile
-`
 
 
 
