@@ -31,7 +31,7 @@ services:
    oai-cn:
       hostname: ubuntu
       volumes:
-       - /var/lib/oai-cn:/var/lib/oai-cn
+       - /var/lib/mosaic5g:/var/lib/mosaic5g
       restart: always
       build:
         context: .
