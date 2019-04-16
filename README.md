@@ -1,4 +1,4 @@
-# Docker-compose.yml to deploy a chain settup of dockers
+# Docker-compose.yml to deploy a chain setup of dockers
 # file          README
 # author        Mihai IDU (C) - 2019 
 
